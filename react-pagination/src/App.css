@@ -1,0 +1,63 @@
+body {
+  overflow-x: hidden;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.product {
+  width: 70%;
+  height: 200px;
+  padding: 5px 20px;
+  background-color: grey;
+  color: #fff;
+  cursor: pointer;
+}
+
+.img-container {
+  width: 100%;
+  height: 80%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+span {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+}
+
+.controls {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.control {
+  width: 100px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  background-color: gray;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.disabled {
+  display: none;
+}
